@@ -1,14 +1,38 @@
-# Keras Neural Network Model
+# Proc-Img-e-Visao-Comp
 
-Este repositório contém um modelo de rede neural treinado usando a biblioteca Keras. O modelo foi salvo no formato `.h5`, que é compatível com a biblioteca Keras/TensorFlow para fins de inferência ou treinamento adicional.
+## Descrição do Projeto:
+Este projeto trata do processamento de imagens e visão computacional utilizando a biblioteca Keras e TensorFlow. O objetivo é aplicar redes neurais para tarefas como classificação de objetos em imagens, detecção de padrões e contagem de objetos. Ele inclui um modelo pré-treinado salvo no formato `.h5` e um conjunto de scripts para carregar, treinar e utilizar o modelo.
 
-## Arquivos
+## Instruções de Instalação:
+Siga os passos abaixo para instalar os pacotes e configurar o ambiente:
 
-- **keras_model.h5**: Este arquivo contém o modelo de rede neural treinado. Ele pode ser carregado para realizar inferências em novos dados ou para continuar o treinamento com novos dados.
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   cd nome-do-repositorio
+##Instruções de Uso:
+1. Carregar o modelo treinado:
+   ```bash
+   from keras.models import load_model
 
-## Requisitos
+   # Carregar o modelo treinado
+   model = load_model('keras_model.h5')
 
-Certifique-se de ter o Python instalado e as seguintes bibliotecas para poder usar este repositório:
+2. Realizar predições com novos dados:
+   ```bash
+   # Exemplo de como realizar predições
+   predictions = model.predict(novos_dados)
+   print(predictions)
+3. Treinamento adicional (opcional):
+   ```bash
+   # Continuar o treinamento com novos dados
+   model.fit(novos_dados_treinamento, novas_labels, epochs=5, batch_size=32)
 
-```bash
-pip install keras tensorflow
+##Créditos:
+Este projeto foi desenvolvido por Alonso Sales, Layane Bentes e Jaime Silva, utilizando Keras e TensorFlow para tarefas de processamento de imagens e visão computacional. Contribuições de terceiros são bem-vindas.
+
+
+
+
+
+
