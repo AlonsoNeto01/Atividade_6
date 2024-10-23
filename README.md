@@ -28,7 +28,7 @@ Siga os passos abaixo para instalar os pacotes e configurar o ambiente:
    # Continuar o treinamento com novos dados
    model.fit(novos_dados_treinamento, novas_labels, epochs=5, batch_size=32)
 
-##Créditos:
+## Créditos:
 Este projeto foi desenvolvido por Alonso Sales, Layane Bentes e Jaime Silva, utilizando Keras e TensorFlow para tarefas de processamento de imagens e visão computacional. Contribuições de terceiros são bem-vindas.
 
 
